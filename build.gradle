@@ -1,0 +1,26 @@
+group 'com.yangxiaochen.app'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName="com.yangxiaochen.app.calc.Main"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+    compile 'org.javafxdata:datafx-core:8.0b5'
+    compile 'org.controlsfx:controlsfx:8.40.10'
+
+    compile 'org.slf4j:jcl-over-slf4j:1.7.10'
+    compile 'org.slf4j:jul-to-slf4j:1.7.10'
+    compile 'org.slf4j:log4j-over-slf4j:1.7.10'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.7'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.0.13'
+
+}

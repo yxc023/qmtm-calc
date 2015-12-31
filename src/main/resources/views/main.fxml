@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yangxiaochen.app.calc.gui.controller.MainController">
+   <children>
+      <JFXRadioButton fx:id="radioPCIAMA" layoutX="60.0" layoutY="39.0" text="PCI-AMA" textFill="#777777" />
+      <JFXRadioButton fx:id="radioPCI2014" layoutX="231.0" layoutY="39.0" text="PCI-2014" textFill="#777777" />
+      <JFXRadioButton fx:id="radioPCI2015" layoutX="415.0" layoutY="39.0" text="PCI-2015" textFill="#777777" />
+
+      <Label layoutX="75.0" layoutY="84.0" text="修复后钢筋腐蚀电流值:" textFill="#777777" />
+      <JFXTextField fx:id="textFieldA" layoutX="205.0" layoutY="76.0" />
+      <Label layoutX="140.0" layoutY="117.0" text="保护层厚度:" textFill="#777777" />
+      <JFXTextField fx:id="textFieldQ" layoutX="205.0" layoutY="109.0" />
+      <Label layoutX="140.0" layoutY="150.0" text="混凝土湿度:" textFill="#777777" />
+      <JFXTextField fx:id="textFieldZ" layoutX="205.0" layoutY="142.0" />
+      <Label layoutX="166.0" layoutY="183.0" text="孔隙率:" textFill="#777777" />
+      <JFXTextField fx:id="textFieldG" layoutX="205.0" layoutY="175.0" />
+      <Label layoutX="32.0" layoutY="216.0" text="钢筋界面区水溶性氯离子含量:" textFill="#777777" />
+      <JFXTextField fx:id="textFieldX" layoutX="205.0" layoutY="208.0" />
+
+      <Text fx:id="msgA" layoutX="386.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="拉拉拉拉拉拉爱阿&#10;狸的顶顶顶顶顶的&#10;顶顶顶顶顶的" visible="false" />
+      <Text fx:id="msgQ" layoutX="386.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="msg1" visible="false" />
+      <Text fx:id="msgZ" layoutX="386.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="msg1" visible="false" />
+      <Text fx:id="msgG" layoutX="386.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="msg1" visible="false" />
+      <Text fx:id="msgX" layoutX="386.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="msg1" visible="false" />
+
+      <JFXButton fx:id="submitButton" layoutX="261.0" layoutY="250.0" onMouseClicked="#submit" ripplerFill="WHITE" style="-fx-background-color: #5264AE;" text="计算" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXSpinner fx:id="spinner" layoutX="269.0" layoutY="250.0" visible="false" />
+
+
+      <Pane layoutX="94.0" layoutY="304.0" prefHeight="87.0" prefWidth="491.0">
+         <children>
+            <Text fill="#777777" layoutX="23.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="钢筋界面区浓度:" />
+            <Text fill="#777777" layoutX="23.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="需要涂覆阻锈剂:" />
+            <Text fill="#777777" layoutX="36.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="分次涂抹次数:" />
+            <Text fill="#777777" layoutX="285.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="克/千克" />
+            <JFXTextField fx:id="textFieldR1" layoutX="118.0" layoutY="5.0" />
+            <JFXTextField fx:id="textFieldR2" layoutX="118.0" layoutY="27.0" />
+            <JFXTextField fx:id="textFieldR3" layoutX="118.0" layoutY="48.0" />
+            <Text fill="#777777" layoutX="285.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="克/平方米" />
+            <Text fill="#777777" layoutX="285.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="次" />
+         </children>
+      </Pane>
+
+   </children>
+</Pane>
